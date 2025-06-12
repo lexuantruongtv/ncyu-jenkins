@@ -105,4 +105,9 @@ public class GradeConverterTest {
     public void testInvalid_LowExtreme() {
         assertEquals("Invalid", converter.convert(Integer.MIN_VALUE));
     }
+
+    @Test
+    public void testConvert8() {
+        assertEquals("Invalid", converter.convert(-10));
+    }
 }
